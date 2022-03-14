@@ -21,6 +21,9 @@ library(optimx)
 library(reshape2)
 library(ROCR)
 
+install.packages("bigmemory")
+library(bigmemory)
+
 #- Source C++ functions to be used -#
 sourceCpp('solve-cpp.cpp')
 
