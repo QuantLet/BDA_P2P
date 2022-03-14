@@ -9,8 +9,10 @@ setwd(paste0(getwd(),"/Material"))
 # Pre-load the packages and model_perf function
 
 libraries = c("readr", "e1071", "MLmetrics", "stargazer", "dplyr", "purrr", "xtable", "base", "ggplot2", "DescTools","stylo", "igraph", "MASS", "ROCR", "rpart", "e1071", 
-              "SDMTools", "caret","MLmetrics", "igraph", "clusterSim", "randomForest", "Hmisc", "networkD3", "emstreeR")
+              "caret","MLmetrics", "igraph", "clusterSim", "randomForest", "Hmisc", "networkD3", "emstreeR")
 lapply(libraries, library, quietly = TRUE, character.only = TRUE)
+
+install.packages("remotes");remotes::install_version("SDMTools", "1.1-221")
 
 source("model_perf.R")
 
